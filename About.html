@@ -6,13 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
+<style>
+    body{
+        background-color: #fcc603;
+    }
 
+ 
+</style>
 <body>
-<header>
 <div>
 <nav>
 <ul>
-    <p><a href="Hotlines.html" style="color: black;">  Home  </a></p>
+    <p><a href="index.html" style="color: black;">  Home  </a></p>
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Hotlines</a>
         <div class="dropdown-content">
@@ -22,7 +27,7 @@
     
 
   <li class="dropdown">
-    <a href="Action.html" class="dropbtn">Take Action</a>
+    <a href="About.html" class="dropbtn" >Take Action</a>
     <div class="dropdown-content">
       <a href="#">Petitions</a>
       <a href="#">Email Templates</a>
@@ -31,7 +36,7 @@
   </li>
   
   <li class="dropdown">
-    <a href="About.html" class="dropbtn">About</a>
+    <a href="About.html" class="dropbtn" onclick="ms()">About</a>
     <div class="dropdown-content">
       <a href="#">Who are we</a>
       <a href="#">Mission Statement</a>
@@ -42,6 +47,29 @@
 
 </nav>
 </div>
-</header>
+
+<div class="tab">
+    <button class="tablinks" onclick="ms()" style=".button:active">Mission Statement</button>
+    <button class="tablinks" onclick="goal()">Our Goal</button>
+    <button class="tablinks" onclick="whoweare()">Who We Are</button>
+  </div>
+  
+  <p id="demo">This is the mission statement</p>
+
+<script>
+function ms() {
+  document.getElementById("demo").innerHTML = "This is the mission statement";
+}
+
+function goal() {
+  document.getElementById("demo").innerHTML = "This is our goal";
+}
+
+function whoweare() {
+  document.getElementById("demo").innerHTML = "This is who we are";
+}
+
+</script>
+  </div>
 </body>
 </html>
