@@ -112,14 +112,15 @@ margin-right: 2%;
    .tab button {
     background-color: inherit;
     float: centre;
-    margin-left: 16%;
+    margin-left: 13%;
+    outline: 5px dotted green;
     border: none;
     outline: none;
     font-family: "Comic Sans MS", cursive, sans-serif;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 26px;
   }
   
   /* Change background color of buttons on hover */
@@ -147,13 +148,13 @@ margin-right: 2%;
     .tab button {
       background-color: inherit;
       float: centre;
-      margin-left: 3.5%;
+      margin-left: 0%;
       border: none;
       outline: none;
       cursor: pointer;
       padding: 14px 16px;
       transition: 0.3s;
-      font-size: 17px;
+      font-size: 20px;
     }
   }
       
