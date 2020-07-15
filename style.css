@@ -159,7 +159,7 @@ margin-right: 2%;
 .container p {
   font-size: 3rem;
   padding: 0.5rem;
- 
+  padding-top: 25%;
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
@@ -209,6 +209,15 @@ margin-right: 2%;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 19px;
+  }
+
+  .container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    padding-top: 15%;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
   }
 }
