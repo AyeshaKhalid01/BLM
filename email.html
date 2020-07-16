@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="email.css">
+  <!--To make the website responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<style>
+    body{
+        background-color: black;
+    }
+    #rcorners2 {
+  border-radius: 25px;
+  border: 2px solid gold;
+  height: 150px;  
+  margin-left:7%;
+  width:80%; 
+  height: 50vh;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+</style>
+</head>
+<body >
+
+<div>
+<nav id="navbar" style="background-color: gold;">
+<ul>
+    <p><a href="index.html" style="color: black;">  Home  </a></p>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Resources</a>
+      <div class="dropdown-content">
+          <a href="#"><b>Scholarships</b></a>
+          <a href="#"><b>Hotlines</b></a>
+        </div>
+      </li>
+    
+
+  <li class="dropdown">
+    <a href="Action.html" class="dropbtn">Take Action</a>
+    <div class="dropdown-content">
+      <a href="#">Petitions</a>
+      <a href="email.html">Email Templates</a>
+      <a href="#">Attorney General Directory</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="About.html" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      
+    </div>
+  </li>
+</ul>
+
+</nav>
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+<br><br><br>
+<div id="rcorners" >
+<h4 style=" font-size: 40px;color: black; ">Email Templates</h4>
+</div>
+
+<br><br>
+
+<div id="rcorners2" style="height: 10vh; margin-right: 1%;">
+    <p><b>Subject:</b> Police Brutality</p>
+</div>
+<br>
+<div id="rcorners2">
+  <p>I am sending this email in regards to the police brutaility going on in this state</p>
+</div>
+<br>
+<button id='mail'><a href="mailto:someone@yoursite.com?subject=Police%20Brutality%20&subject=Big%20News&body=Hello,%0D%0AI%20am%20sending%20this%20email%20in%20regards%20to%20the%20police%20brutaility%20going%20on%20in%20this%20state.%0D%0A%0D%0A%0D%0A%0D%0A"><b style="color: black;">Send This Email</b></a></button>
+<br> <br><br>
+<br>
+
+<div id="rcorners2" style="height: 10vh; margin-right: 1%;">
+    <p><b>Subject:</b> </p>
+</div>
+<br>
+<div id="rcorners2">
+</div>
+<br>
+<button id='mail'><a href="mailto:webmaster@example.com"><b style="color: black;">Send This Email</b></a></button>
+<br> <br><br>
+<br>
+
+
+<div id="rcorners2" style="height: 10vh; margin-right: 1%;">
+    <p><b>Subject:</b> </p>
+</div>
+<br>
+<div id="rcorners2">
+</div>
+<br>
+<button id='mail'><a href="mailto:webmaster@example.com"><b style="color: black;">Send This Email</b></a></button>
+<br> <br><br>
+<br>
+<br><br>
+</body>
+</html>
