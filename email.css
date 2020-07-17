@@ -18,30 +18,7 @@ nav ul li {
     float: right;
     padding-right: 5%;
   }
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-family: "Helvetica Neue",sans-serif;
-  height: 60px;
-    overflow: hidden;
-  }
-li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    
-  }
 
-  p a:hover, li a:hover, .dropdown:hover .dropbtn {
-    background-color: white;
-  }
-  p a:link{
-    color: black;
-    text-decoration: none;
-}
 
 #rcorners {
     border: none;
@@ -59,7 +36,14 @@ li a, .dropbtn {
 #mail:hover {
     background-color: gold;
   }
-
+  #rcorners2 {
+    border-radius: 25px;
+    border: 2px solid gold;
+    height: 150px;  
+    margin-left:7%;
+    width:80%; 
+    height: 50vh;
+  }
 @media only screen and (max-width: 600px) {
     #mail{
         margin-left: 30%;
@@ -76,9 +60,18 @@ li a, .dropbtn {
         height: 10vh;
         background-color: gold;
       }
+      #rcorners2 {
+        border-radius: 25px;
+        border: 2px solid gold;
+        height: 150px;  
+        margin-left:7%;
+        width:80%; 
+        height: 95vh;
+      }
+    }
 
 
-      @media only screen and (max-width: 800px; min-width: 600px) {
+      @media only screen and (max-width: 800px; min-width: 601px) {
         #mail{
             margin-left: 30%;
             width: 200px;
@@ -94,7 +87,14 @@ li a, .dropbtn {
             height: 10vh;
             background-color: gold;
           }
-    
+          #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid gold;
+            height: 150px;  
+            margin-left:7%;
+            width:80%; 
+            height: 120vh;
+          }
     
     }
 }
