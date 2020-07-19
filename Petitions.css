@@ -1,12 +1,12 @@
 body{
-    background-color: #fcc603;
+    background-color: black;
 }
 h4, h2{
-    color: black;
+    color: gold;
 }
 
 p{
-      color: black;
+      color: gold;
   }
 hr { display: block; 
 
@@ -33,4 +33,7 @@ button{
 margin-top: -15%;
 
 }
+}
+h1 {
+    color: gold;
 }
