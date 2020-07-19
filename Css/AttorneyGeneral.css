@@ -29,6 +29,7 @@ nav {
    width: 100%;
    line-height: 60px;
    position: fixed;
+   
 }
 
 nav ul {
@@ -36,7 +37,6 @@ nav ul {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue",sans-serif;
-
   overflow: hidden;
   background: rgba(0, 0, 0, 0);
 }

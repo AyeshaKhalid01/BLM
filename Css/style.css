@@ -38,24 +38,7 @@ nav ul {
   background: rgba(0, 0, 0, 0);
 }
 
-p{
-  float: left;
-  padding-left: 5%;
-  display: inline-block;
-  font-size: large;
-  color: black;
-  text-align: center;
-  font-family: "Helvetica Neue",sans-serif;
-  text-decoration: none;
-}
-p a:link{
-    color: black;
-    text-decoration: none;
-}
 
-p:active{
-    color: yellow;
-}
 
 nav ul li {
   float: right;
