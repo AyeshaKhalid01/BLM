@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/Css/style.css">
+  <!--To make the website responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+
+<body scroll="no" style="overflow: hidden">
+<header>
+<div>
+<nav>
+<ul>
+  <li class="dropdown" style="float: left; margin-left: 3%;">
+    <a href="index.html" style="color: black;"> <b> Home  </b></a>
+  </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn"><b>Resources</b></a>
+        <div class="dropdown-content">
+            <a href="scholarships.html"><b>Scholarships</b></a>
+            <a href="Hotlines.html"><b>Hotlines</b></a>
+          </div>
+      </li>
+    
+
+  <li class="dropdown">
+    <a href="About.html" class="dropbtn" ><b>Take Action</b></a>
+    <div class="dropdown-content">
+      <a href="Petitions.html">Petitions</a>
+      <a href="email.html">Email Templates</a>
+      <a href="AttorneyGeneral.html">Attorney General Directory</a>
+    </div>
+  </li>
+  
+  <li class="dropdown">
+    <a href="About.html" class="dropbtn" onclick="ms()"><b>About</b></a>
+    <div class="dropdown-content">
+      
+    </div>
+  </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="container">
+  <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+</div>
+
+<script>
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["Black Lives Matter!"];
+const typingDelay = 100;
+const erasingDelay = 0;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+ if (charIndex < textArray[textArrayIndex].length) {
+   if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+   typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+   charIndex++;
+   setTimeout(type, typingDelay);
+ } 
+
+}
+
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+ if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+</script>
+</header>
+</body>
+</html>
