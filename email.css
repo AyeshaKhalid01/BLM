@@ -71,6 +71,119 @@ nav ul li {
     }
 
 
+    nav {
+   
+      width: 100%;
+      line-height: 60px;
+      position: fixed;
+   }
+   
+   nav ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     font-family: "Helvetica Neue",sans-serif;
+   
+     overflow: hidden;
+     background: rgba(0, 0, 0, 0);
+   }
+   
+   
+   
+   nav ul li {
+     float: right;
+     padding-right: 4%;
+     
+   }
+   
+   li a, .dropbtn {
+     display: inline-block;
+     color: black;
+     text-align: center;
+     padding: 5px 16px;
+     text-decoration: none;
+     
+   }
+   
+    li a:hover, .dropdown:hover .dropbtn {
+     background-color: aliceblue;
+   }
+   
+   li.dropdown {
+     display: inline-block;
+     float: right;
+   }
+   
+   .dropdown-content {
+   margin-right: 2%;
+     display: none;
+     position: absolute;
+     background-color: black;
+     text-align: center;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+     outline:thin;
+   }
+   
+   .dropdown-content a {
+     color: #fcd303;
+     outline: 2px solid #fcd303;
+     padding: 12px 16px;
+     display: block;
+     text-align: center;
+   }
+   
+   .dropdown-content a:hover {background-color: #f1f1f1;}
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+   
+   
+      /* Style the buttons inside the tab */
+      .tab button {
+       background-color: inherit;
+       float: centre;
+       margin-left: 13%;
+       border: none;
+       outline: none;
+       font-family: "Comic Sans MS", cursive, sans-serif;
+       cursor: pointer;
+       padding: 14px 16px;
+       transition: 0.3s;
+       font-size: 20px;
+     }
+     
+     /* Change background color of buttons on hover */
+     .tab button:hover {
+       background-color: #ddd;
+       text-decoration: underline;
+     text-decoration-color: black;
+       
+     }
+     
+     /* Create an active/current tablink class */
+     .tab button.active {
+       background-color: #ccc;
+     }
+     
+     /* Style the tab content */
+     .tabcontent {
+       display: none;
+       padding: 6px 12px;
+       border: 1px solid #ccc;
+       border-top: none;
+     }
+   
+   
+   
+
+
+
+
+
+    
       @media only screen and (max-width: 800px; min-width: 601px) {
         #mail{
             margin-left: 30%;
