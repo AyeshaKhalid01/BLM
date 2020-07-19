@@ -1,118 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="email.css">
+  <title>Scholarships</title>
+  <script src="scroll.js"></script>
   <link rel="stylesheet" href="AttorneyGeneral.css">
-  <!--To make the website responsive-->
+
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    body{
-        background-color: black;
-    }
   
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-
-}
-
-</style>
 </head>
-<body >
-
-<div>
-<nav id="navbar" style="background-color: gold;">
-<ul>
-    <p><a href="index.html" style="color: black;">  Home  </a></p>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Resources</a>
-      <div class="dropdown-content">
-          <a href="#" >Scholarships</b></a>
-          <a href="#">Hotlines</a>
+<style>
+</style>
+<body>
+    <div >
+        <nav id="navbar" style="background-color: gold;width: 100%; margin-left: -0.7%; margin-top: -1%;">
+        <ul style="width: 100%;">
+            <li class="dropdown" style="float: left;">
+                <a href="index.html" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+           
+           
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Resources</a>
+              <div class="dropdown-content">
+                  <a href="#" >Scholarships</b></a>
+                  <a href="#">Hotlines</a>
+                </div>
+              </li>
+            
+        
+          <li class="dropdown">
+            <a href="Action.html" class="dropbtn">Take Action</a>
+            <div class="dropdown-content">
+              <a href="#">Petitions</a>
+              <a href="email.html">Email Templates</a>
+              <a href="AttorneyGeneral.html">Attorney General Directory</a>
+            </div>
+          </li>
+          
+          <li class="dropdown">
+            <a href="About.html" class="dropbtn">About</a>
+            <div class="dropdown-content">
+              
+            </div>
+          </li>
+        </ul>
+        
+        </nav>
         </div>
-      </li>
-    
 
-  <li class="dropdown">
-    <a href="Action.html" class="dropbtn">Take Action</a>
-    <div class="dropdown-content">
-      <a href="#">Petitions</a>
-      <a href="email.html">Email Templates</a>
-      <a href="AttorneyGeneral.html">Attorney General Directory</a>
+
+
+
+<br><br><br>
+<h1 style="margin-left: 2%;color: gold;">Attorney General Directory</h1>
+<p style="color: gold;margin-left: 2%">The job of the Attorney General is to enfore the rules.</p>
+<br><br>
+
+    <div class="row">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-12 mb-3">
+            <input style="margin-top: -1%;margin-left: 1%; width: 40%;height:10vh;" type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for Attorney Generals..">
+          </div>
+        </div>
+        <br><br>
+        <div class="row" id="myItems">
+          <div class="col-sm-12 mb-3">
+
+            <div class="column">
+            <div class="card">
+                <div class="card-body">
+                    <img src="General4.jpg" alt="Avatar" style="width:220px;height:270px">
+                  <h4 class="card-subtitle mb-2 text-muted">Chase Cunnings</h4>
+                  <h5 class="card-title">New York</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+            <div class="card">
+                <img src="General3.jpg" alt="Avatar" style="width:220px;height:270px">
+              <div class="card-body">
+                <h4 class="card-subtitle mb-2 text-muted">Jacob Smithwath</h4>
+                <h5 class="card-title">Massachushetts</h5>
+              </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <div class="card-body">
+                <img src="General2.jpg" alt="Avatar" style="width:220px;height:270px">
+                <h4 class="card-subtitle mb-2 text-muted">ADamario Solo</h4>
+                <h5 class="card-title">Georgia</a></h5>
+              </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <div class="card-body">
+                <img src="General5.jpg" alt="Avatar" style="width:220px;height:270px">
+                <h4 class="card-subtitle mb-2 text-muted">Fred Lujs</h4>
+                <h5 class="card-title">California</h5>
+              </div>
+            </div>
+        </div>
+        
+            
+          </div>
+        </div>
     </div>
-  </li>
+    </div>
+     
+            
+           
+           
+<br><br><br>
+<script>
+  function myFunction() {
+      var input, filter, cards, cardContainer, h5, title, i;
+      input = document.getElementById("myFilter");
+      filter = input.value.toUpperCase();
+      cardContainer = document.getElementById("myItems");
+      cards = cardContainer.getElementsByClassName("card");
+      for (i = 0; i < cards.length; i++) {
+          title = cards[i].querySelector(".card-body h5.card-title");
+          if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+              cards[i].style.display = "";
+          } else {
+              cards[i].style.display = "none";
+          }
+      }
+  }
   
-  <li class="dropdown">
-    <a href="About.html" class="dropbtn">About</a>
-    <div class="dropdown-content">
-      
-    </div>
-  </li>
-</ul>
-
-</nav>
-</div>
-
-<div>
-<p style=" font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: gold;">Attorney General Role</p>
-<br><br><br><br><br><br>
-</div>
-
-<div class="search-container">
-  <form action="/action_page.php">
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-</div>
-
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="General4.jpg" alt="Avatar" style="width:80%">
-      <h3>Attorney General </h3>
-      <p>Chase Cunnings</p>
-      <p>Massachushetts</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="General3.jpg" alt="Avatar" style="width:100%">
-      <h3>Attorney  General</h3>
-      <p>Jacob Smithwath</p>
-      <p>Massachushetts</p>
-    </div>
-  </div>
   
-  <div class="column">
-    <div class="card">
-      <img src="General2.jpg" alt="Avatar" style="width:80%">
-      <h3>Attorney General</h3>
-      <p>Damario Solo</p>
-      <p>Massachushetts</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <img src="General5.jpg" alt="Avatar" style="width:80%">
-      <h3>Attorney General</h3>
-      <p>Fred Lujs</p>
-      <p>Massachushetts</p>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
+  </script>
 </body>
 </html>
