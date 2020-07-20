@@ -189,11 +189,11 @@ margin-right: 2%;
     margin-left: -2%;
     border: none;
     outline: none;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS, cursive, sans-serif";
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 14px 10px;
     transition: 0.3s;
-    font-size: 19px;
+    font-size: 15px;
   }
 
   .container p {
