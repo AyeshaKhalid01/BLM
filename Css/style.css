@@ -95,7 +95,7 @@ margin-right: 2%;
    .tab button {
     background-color: inherit;
     float: centre;
-    margin-left: 13%;
+    margin-left: 5%;
     border: none;
     outline: none;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -185,7 +185,7 @@ margin-right: 2%;
   .tab button {
     background-color: inherit;
     float: centre;
-    margin-left: 0%;
+    margin-left: -2%;
     border: none;
     outline: none;
     font-family: "Comic Sans MS", cursive, sans-serif;
@@ -203,4 +203,10 @@ margin-right: 2%;
     text-align: center;
     overflow: hidden;
   }
+  nav ul li {
+    float: right;
+    padding-right: 1%;
+    
+  }
+  
 }
