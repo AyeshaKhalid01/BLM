@@ -1,48 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Mental Health Resources</title>
+  <script src="scroll.js"></script>
   <link rel="stylesheet" href="Css/hotlines.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  
-  <!--To make the website responsive-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+</head>
+
 <style>
-    
+    .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+#mail{
+    width: 200px;
+    background-color: aliceblue; 
+    color: black; 
+    border-radius: 15px;
+  border: 2px solid black;
+}
 </style>
 <body>
-<div>
-<nav>
-<ul>
-  <li class="dropdown" style="float: left; margin-left: 3%;">
-    <a href="index.html" > <b> Home  </b></a>
-  </li>
-    <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn" ><b>Resources</b></a>
-        <div class="dropdown-content">
-            <a href="scholarships.html"><b>Scholarships</b></a>
-            <a href="Hotlines.html"><b>Hotlines</b></a>
-          </div>
-      </li>
-    
+    <div >
+        <nav id="navbar" style="background-color: black;width: 100%; ">
+        <ul style="width: 100%;">
+            <li class="dropdown" style="float: left;">
+                <a href="index.html" class="dropbtn">Home</a>
+                <div class="dropdown-content">
+           
+           
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Resources</a>
+              <div class="dropdown-content">
+                  <a href="scholarships.html" >Scholarships</b></a>
+                  <a href="Hotlines.html">Hotlines</a>
+                </div>
+              </li>
+            
+        
+          <li class="dropdown">
+            <a href="About.html" class="dropbtn">Take Action</a>
+            <div class="dropdown-content">
+              <a href="Petitions.html">Petitions</a>
+              <a href="email.html">Email Templates</a>
+              <a href="AttorneyGeneral.html">Attorney General Directory</a>
+            </div>
+          </li>
+          
+          <li class="dropdown">
+            <a href="About.html" class="dropbtn">About</a>
+            <div class="dropdown-content">
+              
+            </div>
+          </li>
+        </ul>
+        
+        </nav>
 
-  <li class="dropdown">
-    <a href="About.html" class="dropbtn" ><b>Take Action</b></a>
-    <div class="dropdown-content">
-      <a href="Petitions.html">Petitions</a>
-      <a href="email.html">Email Templates</a>
-      <a href="AttorneyGeneral.html">Attorney General Directory</a>
-    </div>
-  </li>
+
+        </div>
+
+
+
+
+
+
+<br><br><br><br><br>
+<h1 style="margin-left: 2%;text-align: center;">Mental Health Resources</h1>
+<br>
+
+    <div class="row">
+    <div class="container">
+
+        
+        </div>
+    
+        <div class="row" id="myItems">
+          <div class="col-sm-12 mb-3">
+
+            <div class="column">
+              <div class="card">
+                  <div class="card-body">
+                    <div style="background-color: white;margin-top: 3%;">
+                      <img src="Images/hotlines/american psy association.png" alt="Avatar" style="width:250px;height:240px">
+                    </div>
+                    <h4 class="card-subtitle mb-2 text-muted">American Psychiatry Association</h4><br>
+                    <button id='mail'><a href="https://www.psychiatry.org/patients-families">Learn More</b></a></button>
+                  </div>
+                </div>
+              </div>
   
-  <li class="dropdown">
-    <a href="About.html" class="dropbtn"  onclick="ms()"><b>About</b></a>
-    <div class="dropdown-content">
+              <div class="column">
+                <div class="card">
+                    <div class="card-body">
+                      <div style="background-color: white;margin-top: 3%;">
+                        <img src="Images/hotlines/Healthline.jpg" alt="Avatar" style="width:250px;height:240px">
+                      </div>
+                      <h4 class="card-subtitle mb-2 text-muted">Healthline</h4><br>
+                      <button id='mail'><a href="https://www.healthline.com/health/mental-health-resources">Learn More</b></a></button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="column">
+                  <div class="card">
+                      <div class="card-body">
+                        <div style="background-color: white;margin-top: 3%;">
+                          <img src="Images/hotlines/MedlinePlus -- Mental Health.png" alt="Avatar" style="width:250px;height:240px">
+                        </div>
+                        <h4 class="card-subtitle mb-2 text-muted">MedlinePlus -- Mental Health</h4><br>
+                        <button id='mail'><a href="https://medlineplus.gov/mentalhealth.html">Learn More</b></a></button>
+                      </div>
+                    </div>
+                  </div>
       
+                  <div class="column">
+                    <div class="card">
+                        <div class="card-body">
+                          <div style="background-color: white;margin-top: 3%;">
+                            <img src="Images/hotlines/Mental Health Resources.png" alt="Avatar" style="width:250px;height:240px">
+                          </div>
+                          <h4 class="card-subtitle mb-2 text-muted">Mental Health Resources</h4><br>
+                          <button id='mail'><a href="http://www.mhresources.org/">Learn More</b></a></button>
+                        </div>
+                      </div>
+                    </div>
+      
+  
+  
+  
+                    <div class="column">
+                      <div class="card">
+                          <div class="card-body">
+                            <div style="background-color: white;margin-top: 3%;">
+                              <img src="Images/hotlines/MindWise — Military and Family Screenings.png" alt="Avatar" style="width:250px;height:240px">
+                            </div>
+                            <h4 class="card-subtitle mb-2 text-muted">MindWise — Military and Family Screenings</h4>
+                            <button id='mail'><a href="https://screening.mentalhealthscreening.org/Military_NDSD">Learn More</b></a></button>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="column">
+                        <div class="card">
+                            <div class="card-body">
+                              <div style="background-color: white;margin-top: 3%;">
+                                <img src="Images/hotlines/National Alliance on Mental Health.jpg"alt="Avatar" style="width:250px;height:240px">
+                              </div>
+                              <h4 class="card-subtitle mb-2 text-muted">National Alliance on Mental Health</h4><br>
+                              <button id='mail'><a href="https://www.nami.org/Home">Learn More</b></a></button>
+                            </div>
+                          </div>
+                        </div>
+          
+  
+                        <div class="column">
+                          <div class="card">
+                              <div class="card-body">
+                                <div style="background-color: white;margin-top: 3%;">
+                                  <img src="Images/hotlines/National Institute of Mental Health.png" alt="Avatar" style="width:250px;height:240px">
+                                </div>
+                                <h4 class="card-subtitle mb-2 text-muted">National Institute of Mental Health</h4><br>
+                                <button id='mail'><a href="https://www.nimh.nih.gov/health/find-help/index.shtml">Learn More</b></a></button>
+                              </div>
+                            </div>
+                          </div>
+              
+                          <div class="column">
+                            <div class="card">
+                                <div class="card-body">
+                                  <div style="background-color: white;margin-top: 3%;">
+                                    <img src="Images/hotlines/Social Work License Map.png" alt="Avatar" style="width:250px;height:240px">
+                                  </div>
+                                  <h4 class="card-subtitle mb-2 text-muted">Social Work License Map</h4><br>
+                                  <button id='mail'><a href="https://socialworklicensemap.com/social-work-resources/mental-health-resources-list/">Learn More</b></a></button>
+                                </div>
+                              </div>
+                            </div>
+              
+  
+                            <div class="column">
+                              <div class="card">
+                                  <div class="card-body">
+                                    <div style="background-color: white;margin-top: 3%;">
+                                      <img src="Images/hotlines/U.S. Department of Health & Human Services — Mental Health.jpg" alt="Avatar" style="width:250px;height:240px">
+                                    </div>
+                                    <h4 class="card-subtitle mb-2 text-muted">U.S. Department of Health & Human Services — Mental Health</h4><br>
+                                    <button id='mail'><a href="https://www.mentalhealth.gov/">Learn More</b></a></button>
+                                  </div>
+                                </div>
+                              </div>
+                  
+                              <div class="column">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <div style="background-color: white;margin-top: 3%;">
+                                        <img src="Images/hotlines/World Health Organization (WHO) -- Project Atlas.png" alt="Avatar" style="width:250px;height:240px">
+                                      </div>
+                                      <h4 class="card-subtitle mb-2 text-muted">World Health Organization (WHO) -- Project Atlas</h4><br>
+                                      <button id='mail'><a href="https://www.who.int/mental_health/evidence/atlasmnh/en/">Learn More</b></a></button>
+                                    </div>
+                                  </div>
+                                </div>
+                  
+          </div>
+        </div>
     </div>
-  </li>
-</ul>
-</nav>
-</div>
+    </div>
+     
+            
+
+
 <br><br><br>
+
+<h1 style="margin-left: 0%;text-align: center;">Hotlines</h1>
+
+<div id="rcorners2">
+<p style="text-align: left;margin-left: 1%;color: black;"><b>Crisis Text Line: </b> Text “HELLO” to 741741 </p>
+<p style="text-align: left;margin-left: 1%;color: black;"><b>Veterans Crisis Line:</b> Call 1-800-273-TALK (8255) and press 1 or text to 838255 </p>
+<p style="text-align: left;margin-left: 1%;color: black;"><b>Disaster Distress Helpline: </b> Call 1-800-985-5990 or text “TalkWithUs” to 66746 </p>
+<p style="text-align: left;margin-left: 1%;color: black;"><b>Substance Abuse and Mental Health Services Administration (SAMHSA):</b> Call the SAMHSA Treatment Referral Helpline at 1-800-662-HELP (4357) </p>
+</div>
+<br>
+
+<br> <br><br>
+<br>
+
+
+</body>
+</html>
