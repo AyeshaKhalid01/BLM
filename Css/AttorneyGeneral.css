@@ -140,6 +140,11 @@ margin-right: 2%;
     display: block;
     margin-bottom: 20px;
   }
+  nav ul li {
+    float: right;
+    padding-right: 1%;
+    
+  }
 }
 
 /* Style the counter cards */

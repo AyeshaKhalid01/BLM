@@ -149,6 +149,12 @@
       margin-left: -1.8%;
       margin-top: -2%;
    }
+
+   nav ul li {
+    float: right;
+    padding-right: 1%;
+    
+  }
   }
   
   /* Style the counter cards */

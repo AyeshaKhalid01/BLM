@@ -151,7 +151,11 @@ margin-right: 2%;
     margin-left: -1.8%;
     margin-top: -2%;
  }
-
+ nav ul li {
+  float: right;
+  padding-right: 1%;
+  
+}
  #rcorners2 {
   border-radius: 25px;
   border: 2px solid gold;
