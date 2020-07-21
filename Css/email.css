@@ -1,5 +1,7 @@
 *{
     color: white;
+    box-sizing: border-box;
+
 }
 #mail{
     margin-left: 40%;
@@ -182,6 +184,55 @@ nav ul li {
 
 
 
+     #rcorners {
+      border: none;
+      width: 290px;
+      margin-left: 38%;
+      height: 10vh;
+      background-color: gold;
+      color: black;
+    }
+  #mail a{
+     text-decoration: none;
+      color: black; 
+      font-size: large;
+  }
+  #mail:hover {
+      background-color: gold;
+    }
+    #rcorners2 {
+      border-radius: 25px;
+      border: 2px solid gold;
+      height: 150px;  
+      margin-left:7%;
+      width:80%; 
+      height: 58vh;
+    }
+  @media only screen and (max-width: 600px) {
+      #mail{
+          margin-left: 30%;
+          width: 200px;
+      }#mail a{
+          text-decoration: none;
+           color: black; 
+           font-size: medium;
+       }
+       #rcorners {
+          border: none;
+          width: 290px;
+          margin-left: 20%;
+          height: 10vh;
+          background-color: gold;
+        }
+        #rcorners2 {
+          border-radius: 25px;
+          border: 2px solid gold;
+          height: 150px;  
+          margin-left:7%;
+          width:80%; 
+          height: 120vh;
+        }
+      }
 
     
       @media only screen and (max-width: 800px; min-width: 601px) {
