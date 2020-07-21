@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body{
-    background-color: rgba(88, 81, 81, 0.342);
+    background-color: gold;
 }
  /* Float four columns side by side */
  .column {
@@ -130,10 +130,10 @@ margin-right: 2%;
 
   #rcorners2 {
     border-radius: 25px;
-    border: 2px solid gold;  
+    border: 6px solid black;  
     margin-left:5%;
     width:90%; 
-    height: 32vh;
+    height: 27vh;
   }
 
 /* Responsive columns */
