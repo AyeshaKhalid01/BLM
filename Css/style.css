@@ -138,12 +138,10 @@ margin-right: 2%;
   
 .container {
   display: flex;
-  
   justify-content: center;
   align-items: center;
-  padding-top: 9%;
   align-items: middle;
-  margin-top: 20%;
+  margin-top: 23%;
   height: 30px;
 }
 .container p {
