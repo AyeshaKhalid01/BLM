@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="Css/style.css">
+  <title>Scholarships</title>
+  <script src="scroll.js"></script>
   <link rel="stylesheet" href="Css/Petitions.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <!--To make the website responsive-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+</head>
+
 <style>
-    h1,h2,h3,h4,h5,h6{
+    .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+#mail{
+    width: 200px;
+    background-color: aliceblue; 
+    color: black; 
+    border-radius: 15px;
+  border: 2px solid black;
+}
+h1,h2,h3,h4,h5,h6{
   font-family: 'Times New Roman', Times, serif;
 }
  p,button,a, button a {
@@ -17,38 +42,40 @@ font-family: Arial, Helvetica, sans-serif;
  }
 </style>
 <body>
-    <div>
+    <div >
         <nav id="navbar" style="background-color: gold;">
-        <ul>
-            <li class="dropdown" style="float: left;">
-                <a href="index.html" style="color: black;"><img src="BLM LOGO.png" style="margin-top: 10%;height: 60px;width: 70px;"></a>
-                <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Resources</a>
-              <div class="dropdown-content">
-                  <a href="scholarships.html" >Scholarships</b></a>
-                  <a href="Hotlines.html">Hotlines</a>
+            <ul>
+                <li class="dropdown" style="float: left;">
+                    <a href="index.html" style="color: black;"><img src="BLM LOGO.png" style="margin-top: 10%;height: 60px;width: 70px;"></a>
+                    <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                  <div class="dropdown-content">
+                      <a href="scholarships.html" >Scholarships</b></a>
+                      <a href="Hotlines.html">Hotlines</a>
+                    </div>
+                  </li>
+                
+            
+                  <li class="dropdown">
+                    <a href="Petitions.html" class="dropbtn">Take Action</a>
+                  </li>
+              
+              <li class="dropdown">
+                <a href="About.html" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                  
                 </div>
               </li>
+            </ul>
             
-        
-              <li class="dropdown">
-                <a href="Petitions.html" class="dropbtn">Take Action</a>
-              </li>
-          
-          <li class="dropdown">
-            <a href="About.html" class="dropbtn">About</a>
-            <div class="dropdown-content">
-              
+            </nav>
             </div>
-          </li>
-        </ul>
-        
-        </nav>
-        </div>
+    
+    <br>
 
-<br>
 
-        <div class="tab" >
+
+  <div class="tab" >
             <button class="tablinks"><a href="Petitions.html" style="color: white;text-decoration: underline gold;"><b>Petitions</b></a></button>
               <button class="tablinks"><a href="email.html" style="color: white;text-decoration: underline gold;"><b>Email Templates</a></b></button>
               <button class="tablinks"><a href="AttorneyGeneral.html" style="color: white;text-decoration: underline gold;"><b>Attorney General Directory</b></a></button>
@@ -56,102 +83,78 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 
-        <h2 style="text-align: center;font-size: 40px;">Petitions</h2>
-</div>
 
-<hr style="border: 2px solid gold;">
+
+
+
+<br><br><br><br><br>
+<h1 style="margin-left: 2%;text-align: center;">Petitions</h1>
 <br>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 mt-3">
-            <div class="card">
-                <div class="card-horizontal">
-                    <div class="img-square-wrapper" style="margin-left: 2%;">
-                        <img class="" src="Images/Petition/Petition1.jpg" style=" height:25vh;width:50vh" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title"  style="margin-left: 4%;margin-top: -1%;">Petitions #1</h1>
-                        <h2 class="card-title"  style="margin-left: 4%;margin-top: -1%;">Descriptions: Criminal Justice </h1>
-                        <p class="card-text"  style="text-align: left; margin-left: -1%;margin-top: -2%;">Descriptions</p>
-                        <button ><a href="https://www.change.org/start-a-petition?fbclid=IwAR2zFFHUMCe--6Z4TcEvMcB6htcHrJsWwqSKZ_Bba-cKRKsbFxSU3rfXPOk&tag_selected=criminal_justice" style="color: black;text-decoration:none;" target="_blank"> Sign Here!</a></button>
 
-                    </div>
+    <div class="row">
+    <div class="container">
+
+<!--
+        <div id="myBtnContainer" style="margin-left:1%">
+            <button  style="color: black;"class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button style="color: black;" class="btn" onclick="filterSelection('nature')"> Nature</button>
+            <button style="color: black;" class="btn" onclick="filterSelection('cars')"> Cars</button>
+            <button style="color: black;" class="btn" onclick="filterSelection('people')"> People</button>
+          </div>
+        <div class="row">
+        -->
+        </div>
+    
+        <div class="row" id="myItems">
+          <div class="col-sm-12 mb-3">
+
+            <div class="column">
+            <div class="card">
+                <div class="card-body">
+                  <div style="background-color: black;margin-top: 3%;">
+                    <img src="./Images/Petition/criminal.png" alt="Avatar" style="width:400px;height:250px">
+                  </div>
+                  <h4 class="card-subtitle mb-2 text-muted">Criminal Justice</h4><br>
+                  <button id='mail'><a href="https://www.change.org/start-a-petition?fbclid=IwAR2zFFHUMCe--6Z4TcEvMcB6htcHrJsWwqSKZ_Bba-cKRKsbFxSU3rfXPOk&tag_selected=criminal_justice" target="_blank">Sign Here!</b></a></button>
                 </div>
-                
-                <div class="card-footer">
-                </div>
+              </div>
             </div>
+
+            <div class="column">
+            <div class="card">
+                <div class="card-body">
+                  <div style="background-color: white;margin-top: 3%;">
+                    <img src="Images/Petition/Petition2.jpg" alt="Avatar" style="width:250px;height:250px">
+                  </div>
+                  <h4 class="card-subtitle mb-2 text-muted">Racial Justice</h4>                  </h4>
+                  <button id='mail'><a href="https://www.change.org/start-a-petition?fbclid=IwAR2zFFHUMCe--6Z4TcEvMcB6htcHrJsWwqSKZ_Bba-cKRKsbFxSU3rfXPOk&tag_selected=racial_justice" target="_blank">Sign Here!</b></a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                  <div class="card-body">
+                    <div style="background-color: white;margin-top: 3%;">
+                      <img src="Images/Petition/Petition3.jpg" alt="Avatar" style="width:250px;height:240px">
+                    </div>
+                    <h4 class="card-subtitle mb-2 text-muted">Immigration Reform </h4>   
+                    <button id='mail'><a href="https://www.change.org/start-a-petition?fbclid=IwAR2zFFHUMCe--6Z4TcEvMcB6htcHrJsWwqSKZ_Bba-cKRKsbFxSU3rfXPOk&tag_selected=immigration" target="_blank">Sign Here!</b></a></button>
+                  </div>
+                </div>
+              </div>
+
+             
+          </div>
         </div>
     </div>
-</div>
-
-<br> 
-<hr style="border: 2px solid gold;">
-
-<div class="container-fluid">
-    <br>
-    <div class="row">
-        <div class="col-12 mt-3">
-            <div class="card">
-                <div class="card-horizontal">
-                    <div class="img-square-wrapper" style="margin-left: 2%;">
-                        <img class="" src="Images/Petition/Petition2.jpg" style=" height:25vh;width:50vh" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title"  style="margin-left: 4%;margin-top: -1%;">Petitions #2</h1>
-                        <h2 class="card-title"  style="margin-left: 4%;margin-top: -1%;">Descriptions: Racial Justice </h1>
-                        <p class="card-text"  style="text-align: left; margin-left: -1%;margin-top: -2%;">Some quick example text to for the scholarship card's content. This is a scholarship for undergrad students.</p>
-                        <button ><a href="https://www.change.org/start-a-petition?fbclid=IwAR2zFFHUMCe--6Z4TcEvMcB6htcHrJsWwqSKZ_Bba-cKRKsbFxSU3rfXPOk&tag_selected=racial_justice" target="_blank" style="color: black;text-decoration:none;"> Sign Here!</a></button>
-
-                    </div>
-                </div>
-                
-                <div class="card-footer">
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-
-
-
-<br> 
-<hr style="border: 2px solid gold;">
-
-<div class="container-fluid">
-    <br>
-    <div class="row">
-        <div class="col-12 mt-3">
-            <div class="card">
-                <div class="card-horizontal">
-                    <div class="img-square-wrapper" style="margin-left: 2%;">
-                        <img class="" src="Images/Petition/Petition3.jpg" style=" height:25vh;width:50vh" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title"  style="margin-left: 4%;margin-top: -1%;">Petitions #3</h1>
-                        <h2 class="card-title"  style="margin-left: 4%;margin-top: -1%;">Descriptions: Immigration Reform</h1>
-                        <p class="card-text"  style="text-align: left; margin-left: -1%;margin-top: -2%;">Some quick example text to for the scholarship card's content. This is a scholarship for undergrad students.</p>
-                        <button ><a href="https://www.change.org/start-a-petition?fbclid=IwAR2zFFHUMCe--6Z4TcEvMcB6htcHrJsWwqSKZ_Bba-cKRKsbFxSU3rfXPOk&tag_selected=immigration" target="_blank" style="color: black;text-decoration:none;"> Sign Here!</a></button>
-
-                    </div>
-                </div>
-                
-                <div class="card-footer">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br> 
-<hr style="border: 2px solid gold;">
+     
+    <br><br><br><br>    <br>
+<footer>
+<img src="BLM LOGO.png" style="margin-left: 40%;">
+</footer>
 <br><br><br>
 
-<br>
-
-<footer>
-    <img src="BLM LOGO.png" style="margin-left: 40%;">
-    </footer>
-    <br><br>
 </body>
-</head>
 </html>
